@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'PretendardJP';
+  src: url('./font/PretendardJP-Medium.subset.117.woff2');
+}
+
+h2 {
+  margin: 0;
+}

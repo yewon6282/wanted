@@ -1,0 +1,72 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: inherit;
+  height: 50px;
+  border-bottom: 1px solid rgb(137, 137, 137);
+}
+
+header .header{
+  width: 1060px;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-left {
+  margin: auto 0;
+}
+
+.menu-icon {
+  margin-right: 10px;
+  width: 17px;
+  height: 14px;
+}
+
+.logo-icon {
+  height: 17px;
+}
+
+header .header ul {
+  list-style: none;
+}
+
+header .header .header-center li {
+  float: left;
+  padding: 0 15px;
+}
+
+header .header .header-right li {
+  float: left;
+  padding: 0 5px;
+}
+
+.header-right li button{
+  border: none;
+  background-color: inherit;
+}
+
+.menu {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'PretendardJP';
+  color: #333;
+}
+
+.corp-service {
+  padding: 5px 10px;
+  font-size: 13px;
+  border: 1px solid #e1e2e3;
+  border-radius: 50px;
+  color: #333;
+}
