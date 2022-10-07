@@ -5,48 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>원티드 - 나다운 일의 시작</title>
-    <link href="./font.css" rel="stylesheet" />
-    <link href="./header.css" rel="stylesheet" />
-    <link href="./main.css" rel="stylesheet" />
+    <script src="../js/loadHTML.js"></script>
+    <link href="../css/font.css" rel="stylesheet" />
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
   </head>
   <body>
     <div class="page">
       <header>
-        <div class="header">
-          <div class="header-left">
-            <img class="menu-icon" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&w=undefined&q=75" />
-            <img class="logo-icon" src="./image/logo.png" />
-          </div>
-          <ul class="header-center">
-            <li class="menu">채용</li>
-            <li class="menu">이벤트</li>
-            <li class="menu">직군별 연봉</li>
-            <li class="menu">이력서</li>
-            <li class="menu">커뮤니티</li>
-            <li class="menu">프리랜서</li>
-            <li class="menu">AI 합격예측</li>
-          </ul>
-          <ul class="header-right">
-            <li>
-              <button>
-                <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
-                  <defs>
-                    <path id="qt2dnsql4a" d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z"></path>
-                  </defs>
-                  <g fill="none" fill-rule="evenodd">
-                    <use fill="#333" fill-rule="nonzero" stroke="#333" stroke-width=".3" xlink:href="#qt2dnsql4a"></use>
-                  </g>
-                </svg>
-              </button>
-            </li>
-            <li>
-              <button class="menu">회원가입/로그인</button>
-            </li>
-            <li>
-              <a class="corp-service">기업 서비스</a>
-            </li>
-          </ul>
-        </div>
+        <script>loadHTML("header.html");</script>
       </header>
       <main>
         <div id="section1">
@@ -220,9 +188,15 @@
                 </svg>
                 <p id="subscribe-reason">구독해야 하는 이유</p>
               </div>
-              <p style="font-size: 14px;">구독자의 서류 합격률이 비구독자보다 1.5배 높아요!</p>
+              <p style="font-size: 14px">구독자의 서류 합격률이 비구독자보다 1.5배 높아요!</p>
               <a id="apply-subscribe">
-                <span><svg class="check-icon" viewBox="0 0 15 15"><defs><path id="al3je9dvha" d="M576.95 196.13c-.217-.217-.57-.217-.787 0-.217.218-.217.57 0 .788l3.71 3.71c.217.217.57.217.787 0l6.677-6.678c.217-.217.217-.57 0-.787-.217-.217-.57-.217-.787 0l-6.284 6.284-3.316-3.316z"></path></defs><g fill="currentColor" fill-rule="evenodd"><g transform="translate(-575 -192)"><use fill="#FFF" fill-rule="nonzero" stroke="#FFF" stroke-width=".3" xlink:href="#al3je9dvha"></use></g></g></svg></span>
+                <span
+                  ><svg class="check-icon" viewBox="0 0 15 15">
+                    <defs><path id="al3je9dvha" d="M576.95 196.13c-.217-.217-.57-.217-.787 0-.217.218-.217.57 0 .788l3.71 3.71c.217.217.57.217.787 0l6.677-6.678c.217-.217.217-.57 0-.787-.217-.217-.57-.217-.787 0l-6.284 6.284-3.316-3.316z"></path></defs>
+                    <g fill="currentColor" fill-rule="evenodd">
+                      <g transform="translate(-575 -192)"><use fill="#FFF" fill-rule="nonzero" stroke="#FFF" stroke-width=".3" xlink:href="#al3je9dvha"></use></g>
+                    </g></svg
+                ></span>
                 <p>첫 구독 0원 신청하기</p>
               </a>
             </div>
@@ -232,14 +206,47 @@
         <div class="section2">
           <h2>채용 정보를 찾고 계셨나요?</h2>
           <div class="jobs">
-            <div class="jobs-menu"></div>
-            <div class="jobs-menu"></div>
-            <div class="jobs-menu"></div>
-            <div class="jobs-menu"></div>
+            <div class="jobs-menu">
+              <svg class="jobs-icon" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+                <defs>
+                  <path id="qt2dnsql4a" d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z"></path>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <use fill="#333" fill-rule="nonzero" stroke="#333" stroke-width=".3" xlink:href="#qt2dnsql4a"></use>
+                </g>
+              </svg>
+              <p class="jobs-expl">채용공고 ></p>
+            </div>
+            <div class="jobs-menu">
+              <svg class="jobs-icon" viewBox="0 0 32 32">
+                <path
+                  d="M18.812 14.36c-.722.917-1.172 1.905-1.188 2.959-.023 1.658.907 2.901 2.613 3.605l.132.044c3.985 1.027 6.615 3.38 6.615 5.748L27 28.118c0 .03-.222.215-.4.215H5.33c-.157 0-.314-.14-.314-.203L5 26.705c0-2.283 2.384-4.493 6.185-5.564.349-.079.896-.273 1.458-.616.885-.54 1.504-1.297 1.654-2.301a1 1 0 1 0-1.978-.296c-.05.333-.293.63-.719.89-.345.21-.703.338-.909.385C6.075 20.503 3 23.353 3 26.716l.016 1.426c0 1.214 1.103 2.191 2.313 2.191h21.272c1.213-.002 2.399-.995 2.399-2.226l-.016-1.403c0-3.432-3.313-6.414-8.044-7.654-.944-.404-1.327-.932-1.316-1.702.008-.541.284-1.147.76-1.75.31-.394.622-.691.81-.84l.1-.092c1.409-1.474 2.319-3.428 2.319-5.333 0-4.169-3.488-7.666-7.648-7.666-4.158 0-7.647 3.498-7.647 7.666 0 1.795.506 3.33 1.55 4.628a1 1 0 1 0 1.558-1.255c-.748-.93-1.108-2.02-1.108-3.373 0-3.065 2.595-5.666 5.647-5.666 3.054 0 5.648 2.6 5.648 5.666 0 1.329-.67 2.786-1.722 3.906a7.46 7.46 0 0 0-1.079 1.122z"
+                ></path>
+              </svg>
+              <p class="jobs-expl">내 프로필 ></p>
+            </div>
+            <div class="jobs-menu">
+              <svg class="jobs-icon" viewBox="0 0 32 32">
+                <path
+                  d="M11.667 28.667a1 1 0 0 1-1-1v-7h-2v7a1 1 0 0 1-1 1H2.333a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1H17a1 1 0 0 1 1 1v4.333h11a1 1 0 0 1 .993.884l.007.116v12a1 1 0 1 1-2 0v-11H18v15.334h11a1 1 0 1 1 0 2H11.667zM16 6H3.333v20.667h3.334v-7a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v7H16V6zm5 12.333c.736 0 1.333.597 1.333 1.334V21a1.333 1.333 0 1 1-2.666 0v-1.333c0-.737.597-1.334 1.333-1.334zM21 13c.736 0 1.333.597 1.333 1.333v1.334a1.333 1.333 0 1 1-2.666 0v-1.334c0-.736.597-1.333 1.333-1.333zM8 13a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-.667a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1H8zm0-5.333a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-.667a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1H8z"
+                ></path>
+              </svg>
+              <p class="jobs-expl">매치업 ></p>
+            </div>
+            <div class="jobs-menu">
+              <svg class="jobs-icon" viewBox="0 0 32 32">
+                <path
+                  d="M10.667 21.667a3.67 3.67 0 0 1 3.528 2.666H28a1 1 0 0 1 0 2l-13.805.001a3.67 3.67 0 0 1-7.057 0H4a1 1 0 1 1 0-2h3.138a3.67 3.67 0 0 1 3.529-2.667zm0 2a1.668 1.668 0 0 0 0 3.333 1.668 1.668 0 0 0 0-3.333zm10.666-11.334A3.67 3.67 0 0 1 24.862 15H28a1 1 0 0 1 0 2h-3.138a3.67 3.67 0 0 1-7.057 0H4a1 1 0 0 1 0-2h13.805a3.67 3.67 0 0 1 3.528-2.667zm0 2a1.668 1.668 0 0 0 0 3.334 1.668 1.668 0 0 0 0-3.334zM10.667 3a3.67 3.67 0 0 1 3.528 2.666H28a1 1 0 0 1 0 2H14.195a3.67 3.67 0 0 1-7.057 0H4a1 1 0 1 1 0-2h3.138A3.67 3.67 0 0 1 10.667 3zm0 2a1.668 1.668 0 0 0 0 3.333 1.668 1.668 0 0 0 0-3.333z"
+                ></path>
+              </svg>
+              <p class="jobs-expl">직군별 연봉 ></p>
+            </div>
           </div>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <script>loadHTML("footer.html");</script>
+      </footer>
     </div>
   </body>
 </html>

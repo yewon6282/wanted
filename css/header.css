@@ -1,17 +1,11 @@
-body{
-  margin: 0;
-  padding: 0;
-}
-
-.page {
-  width: 100vw;
-  height: 100vh;
-}
-
 header {
+  z-index: 800;
+  position: fixed;
+  top: 0;
   width: inherit;
   height: 50px;
-  border-bottom: 1px solid rgb(137, 137, 137);
+  border-bottom: 1px solid rgb(174, 174, 174);
+  background-color: #fff;
 }
 
 header .header{
