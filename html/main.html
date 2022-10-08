@@ -7,6 +7,7 @@
     <title>원티드 - 나다운 일의 시작</title>
     <script src="../js/loadHTML.js"></script>
     <link href="../css/font.css" rel="stylesheet" />
+    <link href="../css/whole.css" rel="stylesheet" />
     <link href="../css/header.css" rel="stylesheet" />
     <link href="../css/main.css" rel="stylesheet" />
     <link href="../css/footer.css" rel="stylesheet" />
@@ -14,21 +15,38 @@
   <body>
     <div class="page">
       <header>
-        <script>loadHTML("header.html");</script>
+        <script>
+          loadHTML("header.html");
+        </script>
       </header>
       <main>
         <div id="section1">
           <div><img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1834%2F10c87e17.jpg&w=1060&q=100" /></div>
         </div>
         <div class="section2">
-          <h2>
-            나에게 필요한 커리어 인사이트
-            <!-- <g
-            ><path stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M9.421 13.334c-.736.277-1.535.43-2.368.43-3.706 0-6.71-3.005-6.71-6.711 0-3.707 3.004-6.71 6.71-6.71 1.853 0 3.53.75 4.745 1.965 1.214 1.214 1.965 2.892 1.965 4.745 0 1.853-.75 3.53-1.965 4.745" transform="translate(1 1)"></path
-            ><path fill="#999" d="M6.382 10.408c0-.371.3-.671.67-.671.371 0 .672.3.672.67 0 .372-.3.672-.671.672-.37 0-.671-.3-.671-.671" transform="translate(1 1) rotate(-180 7.053 10.408)"></path
-            ><path stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M5.04 5.655c0-1.08.901-1.958 2.013-1.958 1.11 0 2.013.877 2.013 1.958 0 1.08-1.007 1.957-2.013 1.957v.783" transform="translate(1 1)"></path
-          ></g> -->
-          </h2>
+          <div id="section2-grid1">
+            <h2>나에게 필요한 커리어 인사이트</h2>
+            <button id="question-btn" type="button">
+              <svg width="24" height="24" class="" viewBox="0 0 17 17">
+                <defs>
+                  <filter id="bfoh3u0w3a"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.600000 0 0 0 0 0.600000 0 0 0 0 0.600000 0 0 0 1.000000 0"></feColorMatrix></filter>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <g>
+                    <g>
+                      <g transform="translate(-1080 -374) translate(1080 374)">
+                        <g>
+                          <path stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M9.421 13.334c-.736.277-1.535.43-2.368.43-3.706 0-6.71-3.005-6.71-6.711 0-3.707 3.004-6.71 6.71-6.71 1.853 0 3.53.75 4.745 1.965 1.214 1.214 1.965 2.892 1.965 4.745 0 1.853-.75 3.53-1.965 4.745" transform="translate(1 1)"></path>
+                          <path fill="#999" d="M6.382 10.408c0-.371.3-.671.67-.671.371 0 .672.3.672.67 0 .372-.3.672-.671.672-.37 0-.671-.3-.671-.671" transform="translate(1 1) rotate(-180 7.053 10.408)"></path>
+                          <path stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M5.04 5.655c0-1.08.901-1.958 2.013-1.958 1.11 0 2.013.877 2.013 1.958 0 1.08-1.007 1.957-2.013 1.957v.783" transform="translate(1 1)"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+          </div>
           <div class="scroll">
             <button>IT/기술</button>
             <button>취업/이직</button>
@@ -40,13 +58,13 @@
             <button>조직문화</button>
             <button>브랜딩</button>
             <button>데이터</button>
-            <!-- <button>서비스기획</button> -->
-            <!-- <button>개발</button> -->
-            <!-- <button>디자인</button> -->
+            <button>서비스기획</button>
+            <button>개발</button>
+            <button>디자인</button>
           </div>
           <ul class="career-list">
             <li>
-              <a>
+              <a href="#">
                 <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210208%2F4%2F11031552.jpg&amp;w=500&amp;q=75" alt="우리회사 제품 라이브커머스로 팔기" /></div>
                 <p class="list-title">우리회사 제품 라이브커머스로 팔기</p>
                 <p class="list-comment">라이브커머스를 더 잘하는 법이 궁금하다면, 지금 시청해 보세요!</p>
@@ -57,7 +75,7 @@
               </a>
             </li>
             <li>
-              <a>
+              <a href="#">
                 <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210208%2F4%2F11031552.jpg&amp;w=500&amp;q=75" alt="우리회사 제품 라이브커머스로 팔기" /></div>
                 <p class="list-title">우리회사 제품 라이브커머스로 팔기</p>
                 <p class="list-comment">라이브커머스를 더 잘하는 법이 궁금하다면, 지금 시청해 보세요!</p>
@@ -68,7 +86,7 @@
               </a>
             </li>
             <li>
-              <a>
+              <a href="">
                 <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210208%2F4%2F11031552.jpg&amp;w=500&amp;q=75" alt="우리회사 제품 라이브커머스로 팔기" /></div>
                 <p class="list-title">우리회사 제품 라이브커머스로 팔기</p>
                 <p class="list-comment">라이브커머스를 더 잘하는 법이 궁금하다면, 지금 시청해 보세요!</p>
@@ -79,7 +97,7 @@
               </a>
             </li>
             <li>
-              <a>
+              <a href="#">
                 <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210208%2F4%2F11031552.jpg&amp;w=500&amp;q=75" alt="우리회사 제품 라이브커머스로 팔기" /></div>
                 <p class="list-title">우리회사 제품 라이브커머스로 팔기</p>
                 <p class="list-comment">라이브커머스를 더 잘하는 법이 궁금하다면, 지금 시청해 보세요!</p>
@@ -90,7 +108,7 @@
               </a>
             </li>
             <li>
-              <a>
+              <a href="#">
                 <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210208%2F4%2F11031552.jpg&amp;w=500&amp;q=75" alt="우리회사 제품 라이브커머스로 팔기" /></div>
                 <p class="list-title">우리회사 제품 라이브커머스로 팔기</p>
                 <p class="list-comment">라이브커머스를 더 잘하는 법이 궁금하다면, 지금 시청해 보세요!</p>
@@ -111,10 +129,10 @@
         <hr width="1060px" color="#ececec" />
         <div class="section2">
           <h2>3분만에 읽는 Wanted+ 아티클</h2>
-          <a class="example">아티클 전체보기 ></a>
+          <a href="#" class="example">아티클 전체보기 ></a>
           <ul class="career-list">
             <li>
-              <a>
+              <a href="#">
                 <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210208%2F4%2F11031552.jpg&amp;w=500&amp;q=75" alt="우리회사 제품 라이브커머스로 팔기" /></div>
                 <p class="list-title">우리회사 제품 라이브커머스로 팔기</p>
                 <p class="list-comment2">라이브커머스를 더 잘하는 법이 궁금하다면, 지금 시청해 보세요!</p>
@@ -125,10 +143,10 @@
         <hr width="1060px" color="#ececec" />
         <div class="section2">
           <h2>직장인을 위한 Wanted+ VOD</h2>
-          <a class="example">VOD 전체보기 ></a>
+          <a href="#" class="example">VOD 전체보기 ></a>
           <ul class="career-list">
             <li>
-              <a>
+              <a href="#">
                 <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210208%2F4%2F11031552.jpg&amp;w=500&amp;q=75" alt="우리회사 제품 라이브커머스로 팔기" /></div>
                 <p class="list-comment3">우리회사 제품 라이브커머스로 팔기</p>
                 <p class="list-title">우리회사 제품 라이브커머스로 팔기</p>
@@ -140,10 +158,10 @@
         <div id="line-banner">직군/직무를 입력하면 관련 콘텐츠를 추천해 드려요. 👀 ></div>
         <div class="section2">
           <h2>커리어 성장을 위한 맞춤 이벤트</h2>
-          <a class="example">이벤트 전체보기 ></a>
+          <a href="#" class="example">이벤트 전체보기 ></a>
           <ul class="career-list">
             <li class="event-list">
-              <a>
+              <a href="#">
                 <div><img class="event-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210208%2F4%2F11031552.jpg&amp;w=500&amp;q=75" alt="우리회사 제품 라이브커머스로 팔기" /></div>
                 <div id="online-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
@@ -159,7 +177,7 @@
               </a>
             </li>
             <li class="event-list">
-              <a>
+              <a href="#">
                 <div><img class="event-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210208%2F4%2F11031552.jpg&amp;w=500&amp;q=75" alt="우리회사 제품 라이브커머스로 팔기" /></div>
                 <div id="online-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12">
@@ -189,7 +207,7 @@
                 <p id="subscribe-reason">구독해야 하는 이유</p>
               </div>
               <p style="font-size: 14px">구독자의 서류 합격률이 비구독자보다 1.5배 높아요!</p>
-              <a id="apply-subscribe">
+              <a href="#" id="apply-subscribe">
                 <span
                   ><svg class="check-icon" viewBox="0 0 15 15">
                     <defs><path id="al3je9dvha" d="M576.95 196.13c-.217-.217-.57-.217-.787 0-.217.218-.217.57 0 .788l3.71 3.71c.217.217.57.217.787 0l6.677-6.678c.217-.217.217-.57 0-.787-.217-.217-.57-.217-.787 0l-6.284 6.284-3.316-3.316z"></path></defs>
@@ -245,7 +263,9 @@
         </div>
       </main>
       <footer>
-        <script>loadHTML("footer.html");</script>
+        <script>
+          loadHTML("footer.html");
+        </script>
       </footer>
     </div>
   </body>
