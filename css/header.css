@@ -9,6 +9,28 @@ body{
   height: 100vh;
 }
 
+main {
+  position: relative;
+  top: 50px;
+  width: inherit;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+}
+
+/* ------------------- 페이지 공통 ------------------- */
+
 header {
   z-index: 10;
   position: fixed;
@@ -88,7 +110,7 @@ header .header ul {
   color: #333;
 }
 
-.header-center li {
+.header-center .menu {
   float: left;
   padding: 15px;
   cursor: pointer;
@@ -104,8 +126,6 @@ header .header ul {
 }
 
 .header-right li button{
-  border: none;
-  background-color: inherit;
   cursor: pointer;
 }
 

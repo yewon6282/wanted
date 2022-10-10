@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>원티드 - 나다운 일의 시작</title>
     <script src="../js/loadHTML.js"></script>
+    <script src="../js/display.js"></script>
     <link href="../css/font.css" rel="stylesheet" />
     <link href="../css/whole.css" rel="stylesheet" />
     <link href="../css/header.css" rel="stylesheet" />
@@ -21,12 +22,21 @@
       </header>
       <main>
         <div id="section1">
-          <div><img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1834%2F10c87e17.jpg&w=1060&q=100" /></div>
+          <ul class="slides">
+            <li><img class="slide" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1843%2F6e4ca95f.jpg&w=1060&q=100" width="1060px" /></li>
+            <li><img class="slide" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1851%2F62d57330.jpg&w=1060&q=100" width="1060px" /></li>
+            <li><img class="slide" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1844%2F3d999be3.jpg&w=1060&q=100" width="1060px" /></li>
+            <li><img class="slide" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1826%2F849c1703.jpg&w=1060&q=100" width="1060px" /></li>
+          </ul>
+          <p class="controller">
+            <span class="prev">&lang;</span>
+            <span class="next">&rang;</span>
+          </p>
         </div>
         <div class="section2">
           <div id="section2-grid1">
             <h2>나에게 필요한 커리어 인사이트</h2>
-            <button id="question-btn" type="button">
+            <button onclick="onDisplay('mini-popup')" id="question-btn" type="button">
               <svg width="24" height="24" class="" viewBox="0 0 17 17">
                 <defs>
                   <filter id="bfoh3u0w3a"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.600000 0 0 0 0 0.600000 0 0 0 0 0.600000 0 0 0 1.000000 0"></feColorMatrix></filter>
@@ -46,6 +56,17 @@
                 </g>
               </svg>
             </button>
+            <div id="mini-popup">
+              <div id="mini-popup-top">
+                <span id="mini-popup-title">취직/이직 준비하시기도 바쁘시죠? 😎</span>
+                <button onclick="offDisplay('mini-popup')">
+                  <span
+                    ><svg viewBox="0 0 24 24" style="width: 18px"><path d="M17.97 19.03a.749.749 0 1 0 1.06-1.06l-6.5-6.5a.749.749 0 0 0-1.06 0l-6.5 6.5a.749.749 0 1 0 1.06 1.06L12 13.06l5.97 5.97zM12 10.94 6.03 4.97a.749.749 0 1 0-1.06 1.06l6.5 6.5a.749.749 0 0 0 1.06 0l6.5-6.5a.749.749 0 1 0-1.06-1.06L12 10.94z"></path></svg
+                  ></span>
+                </button>
+              </div>
+              <div id="mini-popup-comment">커리어 인사이트, 이제 따로 찾지 말고 원티드에서 만나보세요! 검증된 IT업계 전문가들이 다양한 채널에서 생산하는 커리어 콘텐츠를 선별해서 관심 태그 기반으로 제공해 드립니다.</div>
+            </div>
           </div>
           <div class="scroll">
             <button>IT/기술</button>
@@ -70,7 +91,7 @@
                 <p class="list-comment">라이브커머스를 더 잘하는 법이 궁금하다면, 지금 시청해 보세요!</p>
                 <div style="display: flex">
                   <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&amp;w=60&amp;q=90" class="profile-photo" />
-                  <p class="writer">강남언니 김윤혁</p>
+                  <span class="writer">강남언니 김윤혁</span>
                 </div>
               </a>
             </li>
@@ -81,7 +102,7 @@
                 <p class="list-comment">라이브커머스를 더 잘하는 법이 궁금하다면, 지금 시청해 보세요!</p>
                 <div style="display: flex">
                   <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&amp;w=60&amp;q=90" class="profile-photo" />
-                  <p class="writer">강남언니 김윤혁</p>
+                  <span class="writer">강남언니 김윤혁</span>
                 </div>
               </a>
             </li>
@@ -92,7 +113,7 @@
                 <p class="list-comment">라이브커머스를 더 잘하는 법이 궁금하다면, 지금 시청해 보세요!</p>
                 <div style="display: flex">
                   <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&amp;w=60&amp;q=90" class="profile-photo" />
-                  <p class="writer">강남언니 김윤혁</p>
+                  <span class="writer">강남언니 김윤혁</span>
                 </div>
               </a>
             </li>
@@ -103,7 +124,7 @@
                 <p class="list-comment">라이브커머스를 더 잘하는 법이 궁금하다면, 지금 시청해 보세요!</p>
                 <div style="display: flex">
                   <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&amp;w=60&amp;q=90" class="profile-photo" />
-                  <p class="writer">강남언니 김윤혁</p>
+                  <span class="writer">강남언니 김윤혁</span>
                 </div>
               </a>
             </li>
@@ -114,7 +135,7 @@
                 <p class="list-comment">라이브커머스를 더 잘하는 법이 궁금하다면, 지금 시청해 보세요!</p>
                 <div style="display: flex">
                   <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&amp;w=60&amp;q=90" class="profile-photo" />
-                  <p class="writer">강남언니 김윤혁</p>
+                  <span class="writer">강남언니 김윤혁</span>
                 </div>
               </a>
             </li>
@@ -170,7 +191,7 @@
                       d="M5.98.9A5.09 5.09 0 00.32 6.54l1.03-.1a4.07 4.07 0 014.52-4.53L5.98.89zm4.57 4.56l-1.03.1A4.07 4.07 0 015 10.1l-.11 1.03a5.1 5.1 0 005.66-5.66zM5.76 2.94c-.9-.1-1.84.18-2.53.86a3.06 3.06 0 00-.86 2.54l1.02-.11c-.07-.6.12-1.24.57-1.7a2.05 2.05 0 011.7-.57l.1-1.02zM8.5 5.68l-1.04.12a2 2 0 01-2.24 2.24L5.1 9.06a3.06 3.06 0 003.4-3.4zm-2.53-.22c-.3-.3-.8-.3-1.1 0-.3.3-.29.78.02 1.08.3.3.79.3 1.09 0 .3-.3.3-.78 0-1.08z"
                     ></path>
                   </svg>
-                  <p id="online">온라인</p>
+                  <span id="online">온라인</span>
                 </div>
                 <p class="list-title">우리회사 제품 라이브커머스로 팔기</p>
                 <p class="list-comment">라이브커머스를 더 잘하는 법이 궁금하다면, 지금 시청해 보세요!</p>
@@ -186,7 +207,7 @@
                       d="M5.98.9A5.09 5.09 0 00.32 6.54l1.03-.1a4.07 4.07 0 014.52-4.53L5.98.89zm4.57 4.56l-1.03.1A4.07 4.07 0 015 10.1l-.11 1.03a5.1 5.1 0 005.66-5.66zM5.76 2.94c-.9-.1-1.84.18-2.53.86a3.06 3.06 0 00-.86 2.54l1.02-.11c-.07-.6.12-1.24.57-1.7a2.05 2.05 0 011.7-.57l.1-1.02zM8.5 5.68l-1.04.12a2 2 0 01-2.24 2.24L5.1 9.06a3.06 3.06 0 003.4-3.4zm-2.53-.22c-.3-.3-.8-.3-1.1 0-.3.3-.29.78.02 1.08.3.3.79.3 1.09 0 .3-.3.3-.78 0-1.08z"
                     ></path>
                   </svg>
-                  <p id="online">온라인</p>
+                  <span id="online">온라인</span>
                 </div>
                 <p class="list-title">우리회사 제품 라이브커머스로 팔기</p>
                 <p class="list-comment">라이브커머스를 더 잘하는 법이 궁금하다면, 지금 시청해 보세요!</p>
@@ -204,17 +225,18 @@
                     fill="#000000"
                   ></path>
                 </svg>
-                <p id="subscribe-reason">구독해야 하는 이유</p>
+                <span id="subscribe-reason">구독해야 하는 이유</span>
               </div>
               <p style="font-size: 14px">구독자의 서류 합격률이 비구독자보다 1.5배 높아요!</p>
               <a href="#" id="apply-subscribe">
-                <span
-                  ><svg class="check-icon" viewBox="0 0 15 15">
+                <p>
+                  <svg class="check-icon" viewBox="0 0 15 15">
                     <defs><path id="al3je9dvha" d="M576.95 196.13c-.217-.217-.57-.217-.787 0-.217.218-.217.57 0 .788l3.71 3.71c.217.217.57.217.787 0l6.677-6.678c.217-.217.217-.57 0-.787-.217-.217-.57-.217-.787 0l-6.284 6.284-3.316-3.316z"></path></defs>
                     <g fill="currentColor" fill-rule="evenodd">
                       <g transform="translate(-575 -192)"><use fill="#FFF" fill-rule="nonzero" stroke="#FFF" stroke-width=".3" xlink:href="#al3je9dvha"></use></g>
-                    </g></svg
-                ></span>
+                    </g>
+                  </svg>
+                </p>
                 <p>첫 구독 0원 신청하기</p>
               </a>
             </div>
@@ -268,5 +290,6 @@
         </script>
       </footer>
     </div>
+    <script src="../js/slideShow.js"></script>
   </body>
 </html>

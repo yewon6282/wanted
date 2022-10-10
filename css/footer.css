@@ -13,7 +13,8 @@ footer .footer{
   margin: 0 auto;
 }
 
-.company-info {
+.company-menu {
+  margin-bottom: 10px;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -40,7 +41,32 @@ footer .footer{
   margin-left: 14px;
 }
 
+#company-info {
+  display: flex;
+  flex-direction: row;
+}
+
 #footer-text {
+  width: auto;
+  margin: 0;
+  padding: 17px 10px 0 0;
   font-size: 12px;
+  line-height: 20px;
   color: #767676;
+
+}
+
+#select_btn {
+  margin-top: 17px;
+  width: 250px;
+  height: 40px;
+  background: #f2f4f7;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  line-height: 2;
+  color: #717171;
+  padding: 0 45px;
+  appearance: none;
+  font-weight: 500;
 }

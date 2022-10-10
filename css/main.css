@@ -1,17 +1,49 @@
-main {
+#section1 {
+  width: 1060px;
+  height: 300px;
   position: relative;
-  top: 50px;
-  width: inherit;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  min-height: 100%;
+  margin: 0 auto;
+  overflow: hidden;   
 }
 
-#section1 {
-  padding-top: 25px;
+.slides{
+  position: absolute;
+  padding: 0;
+  width: 4288px;
+  transition: left 0.4s ease-out; 
+}
+
+.slides li:not(:last-child){
+  float: left;
+}
+
+.slides li{
+  float: left;
+}
+
+.slides li img {
+  border-radius: 4px;
+}
+
+.controller span{
+  position:absolute;
+  top: 130px;
+  width: 30px;
+  padding: 20px 0;
+  opacity: .5;
+  background-color: #fff;
+  text-align: center;
+  color: #aaa;
+  border-radius: 50px;
   cursor: pointer;
+}
+
+.prev{
+  left: 10px;
+}
+
+.next{
+  right: 10px;
 }
 
 .section2{
@@ -30,6 +62,41 @@ main {
   border: none;
   padding: 0;
   cursor: pointer;
+}
+
+#mini-popup {
+  display: none;
+  position: absolute;
+  padding: 20px;
+  max-width: 368px;
+  border: 1px solid #999;
+  background-color: #fff;
+  text-align: left;
+}
+
+#mini-popup-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#mini-popup-top button {
+  cursor: pointer;
+}
+
+#mini-popup-title {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #000;
+}
+
+#mini-popup-comment {
+  margin-top: 15px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #333;
 }
 
 .scroll {
@@ -58,16 +125,15 @@ main {
 }
 
 .career-list {
-  width: 1080px;
+  width: 1060px;
   margin: 30px auto 0;
   padding: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
 
 .career-list li {
-  margin: 0 10px;
+  margin: 0 5px;
   width: 250px;
 }
 
@@ -154,11 +220,11 @@ main {
 .career-list .event-list {
   margin: 0;
   padding: 8px;
-  width: 522px;
+  width: 510px;
 }
 
 .event-image {
-  width: 522px;
+  width: 510px;
 }
 
 #online-icon {
@@ -168,8 +234,6 @@ main {
   background-color: black;
   border-radius: 3px;
   color: white;
-  display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -200,11 +264,6 @@ main {
   text-align: left;
 }
 
-#section3-grid3 {
-  display: flex;
-  flex-direction: row;
-}
-
 #logo-plus {
   width: 160px;
 }
@@ -220,10 +279,10 @@ main {
   height: 50px;
   border-radius: 50px;
   background-color: #36f;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .check-icon {

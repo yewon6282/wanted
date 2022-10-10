@@ -1,0 +1,113 @@
+.section1 {
+  width: 1060px;
+  padding-top: 40px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.section1-grid {
+  display: flex;
+  flex-direction: row;
+}
+
+.job-group, .job-category {
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.job-group {
+  padding: 0 24px 0 0;
+  border-right: 1px solid #e1e2e3;
+  height: 26px;
+}
+
+.job-group-title{
+  margin: 0 15px 0 0;
+  font-size: 24px;
+  color: #333;
+  line-height: 29px;
+  border: none;
+}
+
+.job-group .job-group-title{
+  font-weight: 700;
+}
+
+.more-btn {
+  border: 1px solid #e1e2e3;
+  border-radius: 50px;
+  background-color: #fff;
+  width: 26px;
+  height: 26px;
+}
+
+.job-category {
+  padding-left: 24px;
+}
+
+.section1-grid1 {
+  padding-top: 30px;
+  margin-bottom: 25px;
+}
+
+.filter-btn {
+  background-color: inherit;
+  padding: 10px 15px;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.filter-title {
+  margin-right: 15px;
+}
+
+.btn-display {
+  color: #3366FF;
+  font-weight: 600;
+}
+
+.slick-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.slick-list div{
+  margin-top: 17px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(209, 255, 219);
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+.slick-list div button {
+  display: flex;
+  flex-direction: row;
+}
+
+.slick-list div button img {
+  margin-left: 5px;
+  width: 16px;
+}
+
+.section2 {
+  width: 1060px;
+  padding-top: 40px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.bookmark {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #36f;
+}
