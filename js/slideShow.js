@@ -57,9 +57,6 @@ prev.addEventListener("click", function () {
 
 //5초마다 자동으로 다음 이미지
 function slideShow() {
-  var i;
-  var x = document.getElementsByClassName("slide");
-
   if (currentIdx <= slideCount - 1) {
     slides.style.left = 298 - (currentIdx + 2) * (slideWidth + slideMargin) + "px";
     slides.style.transition = `${0.5}s ease-out`;

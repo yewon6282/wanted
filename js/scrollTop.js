@@ -1,1 +1,3 @@
-const scrollTop = 
+const scrollTop = document.documentElement.scrollTop();
+
+console.log(scrollTop);
