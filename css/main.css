@@ -1,16 +1,13 @@
 #section1 {
-  width: 1060px;
+  width: inherit;
   height: 300px;
   position: relative;
-  margin: 0 auto;
   overflow: hidden;   
 }
 
 .slides{
   position: absolute;
   padding: 0;
-  width: 4288px;
-  transition: left 0.4s ease-out; 
 }
 
 .slides li:not(:last-child){
@@ -19,6 +16,7 @@
 
 .slides li{
   float: left;
+  margin: 0 12px;
 }
 
 .slides li img {
@@ -27,15 +25,23 @@
 
 .controller span{
   position:absolute;
-  top: 130px;
-  width: 30px;
-  padding: 20px 0;
-  opacity: .5;
-  background-color: #fff;
-  text-align: center;
-  color: #aaa;
-  border-radius: 50px;
-  cursor: pointer;
+  top : 130px;
+  width : 30px;
+  padding : 20px 0;
+  opacity : .5;
+  background-color : #fff;
+  text-align : center;
+  color : #aaa;
+  border-radius : 50px;
+  cursor : pointer;
+}
+
+.controller .prev {
+  left : 250px;
+}
+
+.controller .next {
+  right : 250px;
 }
 
 .prev{
@@ -48,6 +54,8 @@
 
 .section2{
   padding: 60px 0;
+  margin: 0 auto;
+  width: 1060px;
 }
 
 #section2-grid1 {
@@ -57,7 +65,7 @@
   flex-direction: row;
 }
 
-#question-btn {
+#question-button {
   background-color: inherit;
   border: none;
   padding: 0;
@@ -99,11 +107,18 @@
   color: #333;
 }
 
+
 .scroll {
-  width: 1060px;
+  width: inherit;
   margin: 30px auto;
   overflow: auto;
   white-space: nowrap;
+}
+
+.scroll-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .scroll::-webkit-scrollbar{

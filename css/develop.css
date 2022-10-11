@@ -1,4 +1,12 @@
 .section1 {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: inherit;
+  background-color: #fff;
+}
+
+.job-list {
   width: 1060px;
   padding-top: 40px;
   margin: 0 auto;
@@ -36,7 +44,7 @@
   font-weight: 700;
 }
 
-.more-btn {
+.more-button {
   border: 1px solid #e1e2e3;
   border-radius: 50px;
   background-color: #fff;
@@ -53,7 +61,7 @@
   margin-bottom: 25px;
 }
 
-.filter-btn {
+.filter-button {
   background-color: inherit;
   padding: 10px 15px;
   border: 1px solid #ececec;
@@ -66,7 +74,7 @@
   margin-right: 15px;
 }
 
-.btn-display {
+.button-display {
   color: #3366FF;
   font-weight: 600;
 }
