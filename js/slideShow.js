@@ -8,7 +8,7 @@ const slideWidth = 1060;
 const slideMargin = 24;
 
 slides.style.width = (slideWidth + slideMargin) * (slideCount + 2) + "px";
-slides.style.left = 298 - (slideWidth + slideMargin) + "px";
+slides.style.left = 200 - (slideWidth + slideMargin) + "px";
 makeClone();
 slideShow();
 

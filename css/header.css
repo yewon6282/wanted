@@ -3,13 +3,13 @@ header {
   position: fixed;
   top: 0;
   width: inherit;
-  height: 50px;
-  border-bottom: 1px solid rgb(174, 174, 174);
+  height: 3.1rem;
+  border-bottom: 1px solid #aeaeae;
   background-color: #fff;
 }
 
 header .header{
-  width: 1060px;
+  width: 66.25rem;
   height: inherit;
   margin: 0 auto;
   display: flex;
@@ -26,32 +26,34 @@ header .header{
 }
 
 .menu-icon {
-  margin-right: 10px;
-  width: 17px;
+  margin-right: 0.62rem;
+  width: 1rem;
 }
 
 .menu-dropdown {
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   background-color: #fff;
 }
 
 .menu-list {
-  padding: 5px 100px 5px 10px;
+  padding: 0 6.25rem 0 0.62rem;
   display: block;
   color: #333;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 2.86;
+  font-size: 0.81rem;
+  font-weight: 600;
+  line-height: 2.9;
 }
 
 #list-all {
-  font-size: 14px;
+  margin-top: 1rem;
+  font-size: 0.85rem;
 }
 
 .menu-list:hover {
-  background-color: #e1e2e3;
+  color: #3366FF;
+  background-color: rgb(247, 249, 250);
 }
 
 .dropdown:hover .menu-dropdown {
@@ -59,48 +61,51 @@ header .header{
 }
 
 .logo-icon {
-  height: 17px;
+  height: 1rem;
 }
 
-header .header ul {
-  list-style: none;
+ul .menu {
+  padding: 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+  float: left;
+  cursor: pointer;
 }
 
-.header-center {
-  margin: 0;
+ul .menu:hover {
+  border-bottom: 1px solid rgb(103, 103, 103);
 }
 
-.menu {
-  font-size: 14px;
-  line-height: 19px;
+.header-right {
+  padding: 0 0.31rem;
+  margin: auto 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-right div {
+  padding-right: 1.25rem;
+  margin-right: 1.25rem;
+  height: 1.18rem;
+  display: flex;
+  flex-direction: row;
+  border-right: 1px solid #e1e2e3;
+}
+
+.header-right .menu {
+  margin-left: 0.62rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: #333;
 }
 
-.header-center .menu {
-  float: left;
-  padding: 15px;
-  cursor: pointer;
-}
-
-.header-center .menu:hover {
-  border-bottom: 1.5px solid rgb(103, 103, 103);
-}
-
-.header-right li {
-  float: left;
-  padding: 0 5px;
-}
-
-.header-right li button{
-  cursor: pointer;
-}
-
 .corp-service {
-  padding: 5px 10px;
-  font-size: 13px;
+  padding: 0.5rem 0.62rem;
   border: 1px solid #e1e2e3;
-  border-radius: 50px;
-  color: #333;
+  border-radius: 3.1rem;
+  font-size: 0.81rem;
+  color: #666;
   cursor: pointer;
 }

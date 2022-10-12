@@ -1,21 +1,19 @@
 footer {
+  padding-bottom: 4em;
   position : relative;
   width: inherit;
-  height: 160px;
-  padding: 18px 0 65px;
   background-color: #fff;
   border-top: 1px solid rgb(174, 174, 174);
 }
 
 footer .footer{
-  width: 1060px;
+  width: 66.25rem;
   height: inherit;
   margin: 0 auto;
 }
 
 .company-menu {
-  margin-bottom: 10px;
-  padding: 0;
+  margin: 1rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,16 +27,16 @@ footer .footer{
 }
 
 .company-logo {
-  margin-right: 50px;
+  margin-right: 3.1rem;
 }
 
 .info-btn {
-  margin-right: 45px;
-  font-size: 15px;
+  margin-right: 3.1rem;
+  font-size: 0.9rem;
 }
 
 .sns-link {
-  margin-left: 14px;
+  margin-left: 0.8rem;
 }
 
 #company-info {
@@ -47,26 +45,24 @@ footer .footer{
 }
 
 #footer-text {
-  width: auto;
-  margin: 0;
-  padding: 17px 10px 0 0;
-  font-size: 12px;
-  line-height: 20px;
+  width: 48rem;
+  padding: 1rem 0.62rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
   color: #767676;
 
 }
 
 #select_btn {
-  margin-top: 17px;
-  width: 250px;
-  height: 40px;
+  padding: 0 2.8rem;
+  margin-top: 1rem;
+  height: 2.5rem;
+  width: 16rem;
   background: #f2f4f7;
-  border-radius: 5px;
+  border-radius: 0.31rem;
   border: none;
-  font-size: 14px;
-  line-height: 2;
+  font-size: 0.8rem;
   color: #717171;
-  padding: 0 45px;
   appearance: none;
   font-weight: 500;
 }
