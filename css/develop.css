@@ -214,6 +214,14 @@
   object-fit: cover;
 }
 
+.job-card-bookmark {
+  position: relative;
+  top: -10.5rem;
+  left: 14rem;
+  color: white;
+  z-index: 8;
+}
+
 .job-card-category {
   color: #333;
   font-size: 1.12rem;

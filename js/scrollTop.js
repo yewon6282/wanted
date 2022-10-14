@@ -2,7 +2,6 @@ const section = document.querySelector(".section-scroll");
 
 window.addEventListener("scroll", function () {
   let topLength = document.documentElement.scrollTop;
-  console.log(topLength);
 
   if (topLength >= 240) {
     section.style.position = "fixed";

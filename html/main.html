@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>원티드 - 나다운 일의 시작</title>
+    <script src="https://kit.fontawesome.com/938222b1cc.js" crossorigin="anonymous"></script>
     <script src="../js/loadHTML.js"></script>
     <script src="../js/display.js"></script>
-    <link href="../css/font.css" rel="stylesheet" />
     <link href="../css/whole.css" rel="stylesheet" />
+    <link href="../css/font.css" rel="stylesheet" />
     <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/login.css" rel="stylesheet" />
     <link href="../css/main.css" rel="stylesheet" />
     <link href="../css/footer.css" rel="stylesheet" />
   </head>
@@ -23,73 +25,72 @@
       <main>
         <div id="section1">
           <ul class="slides">
-            <li><img class="slide" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1843%2F6e4ca95f.jpg&w=1060&q=100" width="1060px" /></li>
-            <li><img class="slide" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1851%2F62d57330.jpg&w=1060&q=100" width="1060px" /></li>
-            <li><img class="slide" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1844%2F3d999be3.jpg&w=1060&q=100" width="1060px" /></li>
-            <li><img class="slide" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1826%2F849c1703.jpg&w=1060&q=100" width="1060px" /></li>
+            <li><img class="slide" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1843%2F6e4ca95f.jpg&w=1060&q=100" /></li>
+            <li><img class="slide" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1851%2F62d57330.jpg&w=1060&q=100" /></li>
+            <li><img class="slide" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1844%2F3d999be3.jpg&w=1060&q=100" /></li>
+            <li><img class="slide" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1826%2F849c1703.jpg&w=1060&q=100" /></li>
           </ul>
           <p class="controller">
-            <span class="prev">&lang;</span>
-            <span class="next">&rang;</span>
+            <span class="slide-prev">&lang;</span>
+            <span class="slide-next">&rang;</span>
           </p>
         </div>
         <div class="section2">
           <div id="section2-grid1">
             <h2>나에게 필요한 커리어 인사이트</h2>
-            <button onclick="onDisplay('mini-popup')" id="question-button" type="button">
-              <svg width="24" height="24" class="" viewBox="0 0 17 17">
-                <defs>
-                  <filter id="bfoh3u0w3a"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.600000 0 0 0 0 0.600000 0 0 0 0 0.600000 0 0 0 1.000000 0"></feColorMatrix></filter>
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                  <g>
-                    <g transform="translate(-1080 -374) translate(1080 374)">
-                      <path stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M9.421 13.334c-.736.277-1.535.43-2.368.43-3.706 0-6.71-3.005-6.71-6.711 0-3.707 3.004-6.71 6.71-6.71 1.853 0 3.53.75 4.745 1.965 1.214 1.214 1.965 2.892 1.965 4.745 0 1.853-.75 3.53-1.965 4.745" transform="translate(1 1)"></path>
-                      <path fill="#999" d="M6.382 10.408c0-.371.3-.671.67-.671.371 0 .672.3.672.67 0 .372-.3.672-.671.672-.37 0-.671-.3-.671-.671" transform="translate(1 1) rotate(-180 7.053 10.408)"></path>
-                      <path stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M5.04 5.655c0-1.08.901-1.958 2.013-1.958 1.11 0 2.013.877 2.013 1.958 0 1.08-1.007 1.957-2.013 1.957v.783" transform="translate(1 1)"></path>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </button>
+            <i onclick="onDisplay('mini-popup')" class="fa-regular fa-circle-question fa-lg" id="question-button"></i>
             <div id="mini-popup">
               <div id="mini-popup-top">
                 <span id="mini-popup-title">취직/이직 준비하시기도 바쁘시죠? 😎</span>
-                <button onclick="offDisplay('mini-popup')">
-                  <span
-                    ><svg viewBox="0 0 24 24" style="width: 1.12rem"><path d="M17.97 19.03a.749.749 0 1 0 1.06-1.06l-6.5-6.5a.749.749 0 0 0-1.06 0l-6.5 6.5a.749.749 0 1 0 1.06 1.06L12 13.06l5.97 5.97zM12 10.94 6.03 4.97a.749.749 0 1 0-1.06 1.06l6.5 6.5a.749.749 0 0 0 1.06 0l6.5-6.5a.749.749 0 1 0-1.06-1.06L12 10.94z"></path></svg
-                  ></span>
-                </button>
+                <i onclick="offDisplay('mini-popup')" class="fa-solid fa-xmark fa-lg"></i>
               </div>
               <div id="mini-popup-comment">커리어 인사이트, 이제 따로 찾지 말고 원티드에서 만나보세요! 검증된 IT업계 전문가들이 다양한 채널에서 생산하는 커리어 콘텐츠를 선별해서 관심 태그 기반으로 제공해 드립니다.</div>
             </div>
           </div>
-          <div>
-            <div class="scroll">
-              <button>IT/기술</button>
-              <button>취업/이직</button>
-              <button>회사생활</button>
-              <button>리더십</button>
-              <button>커리어고민</button>
-              <button>인간관계</button>
-              <button>라이프스타일</button>
-              <button>조직문화</button>
-              <button>브랜딩</button>
-              <button>데이터</button>
-              <button>서비스기획</button>
-              <button>개발</button>
-              <button>디자인</button>
-            </div>
-            <div class="scroll-button">
-              <div class="prev">
-                <button><</button>
+          <div class="section2-scroll">
+            <div class="scroll-bar">
+              <div class="scroll">
+                <button>IT/기술</button>
+                <button>취업/이직</button>
+                <button>회사생활</button>
+                <button>리더십</button>
+                <button>커리어고민</button>
+                <button>인간관계</button>
+                <button>라이프스타일</button>
+                <button>조직문화</button>
+                <button>브랜딩</button>
+                <button>데이터</button>
+                <button>서비스기획</button>
+                <button>개발</button>
+                <button>디자인</button>
               </div>
-              <div class="next">
-                <button>></button>
-              </div>
+              <p class="scroll-button-left">
+                <button class="scroll-prev">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </button>
+              </p>
+              <p class="scroll-button-right">
+                <button class="scroll-next">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
+              </p>
             </div>
+            <button class="ellipsis">
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </button>
           </div>
           <ul class="career-list">
+            <li>
+              <a href="#">
+                <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210208%2F4%2F11031552.jpg&amp;w=500&amp;q=75" alt="우리회사 제품 라이브커머스로 팔기" /></div>
+                <p class="list-title">우리회사 제품 라이브커머스로 팔기</p>
+                <p class="list-comment">라이브커머스를 더 잘하는 법이 궁금하다면, 지금 시청해 보세요!</p>
+                <div style="display: flex">
+                  <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&amp;w=60&amp;q=90" class="profile-photo" />
+                  <span class="writer">강남언니 김윤혁</span>
+                </div>
+              </a>
+            </li>
             <li>
               <a href="#">
                 <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210208%2F4%2F11031552.jpg&amp;w=500&amp;q=75" alt="우리회사 제품 라이브커머스로 팔기" /></div>
@@ -148,16 +149,49 @@
           </ul>
           <button id="other-content">
             더 많은 콘텐츠 보기
-            <img
-              src="data:image/svg+xml;base64,CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjEiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAyMSAxMyIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0icHJlc2VudGF0aW9uIj4KCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0yMC4xMDA1IDIuNzE2OUwxMC45OTMxIDExLjgyNDRDMTAuNDcyNCAxMi4zNDUxIDkuNjI4MTUgMTIuMzQ1MSA5LjEwNzQ1IDExLjgyNDRMLTguMDA4MjllLTA2IDIuNzE2OUwxLjg4NTYxIDAuODMxMjc4TDEwLjA1MDMgOC45OTU5M0wxOC4yMTQ5IDAuODMxMjc4TDIwLjEwMDUgMi43MTY5WiIgLz4KPC9zdmc+Cg=="
-            />
+            <i class="fa-solid fa-angle-down"></i>
           </button>
         </div>
         <hr />
         <div class="section2">
           <h2>3분만에 읽는 Wanted+ 아티클</h2>
-          <a href="#" class="example">아티클 전체보기 ></a>
+          <a href="#" class="example">아티클 전체보기 <i class="fa-solid fa-angle-right"></i></a>
           <ul class="career-list">
+            <li>
+              <a href="#">
+                <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2465%2Fbd154172.jpg&w=800&q=75" /></div>
+                <p class="list-title">이력서 제출 전에 반드시 확인해 보세요!</p>
+                <p class="list-comment2">#개발 #취업/이직 #커리어고민</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2465%2Fbd154172.jpg&w=800&q=75" /></div>
+                <p class="list-title">이력서 제출 전에 반드시 확인해 보세요!</p>
+                <p class="list-comment2">#개발 #취업/이직 #커리어고민</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2465%2Fbd154172.jpg&w=800&q=75" /></div>
+                <p class="list-title">이력서 제출 전에 반드시 확인해 보세요!</p>
+                <p class="list-comment2">#개발 #취업/이직 #커리어고민</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2465%2Fbd154172.jpg&w=800&q=75" /></div>
+                <p class="list-title">이력서 제출 전에 반드시 확인해 보세요!</p>
+                <p class="list-comment2">#개발 #취업/이직 #커리어고민</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2465%2Fbd154172.jpg&w=800&q=75" /></div>
+                <p class="list-title">이력서 제출 전에 반드시 확인해 보세요!</p>
+                <p class="list-comment2">#개발 #취업/이직 #커리어고민</p>
+              </a>
+            </li>
             <li>
               <a href="#">
                 <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2465%2Fbd154172.jpg&w=800&q=75" /></div>
@@ -170,8 +204,48 @@
         <hr />
         <div class="section2" id="VOD">
           <h2>직장인을 위한 Wanted+ VOD</h2>
-          <a href="#" class="example">VOD 전체보기 ></a>
+          <a href="#" class="example">VOD 전체보기 <i class="fa-solid fa-angle-right"></i></a>
           <ul class="career-list">
+            <li>
+              <a href="#">
+                <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210512%2F2%2F46759799.jpg&w=800&q=75" /></div>
+                <p class="list-comment3">애프터모멘트 박창선</p>
+                <p class="list-title">터지는 콘텐츠는 이렇게 만듭니다 Part 2: 독자의 마음 - 박창선</p>
+                <p class="list-comment">터지는 콘텐츠는 이렇게 만듭니다 : Wanted How To</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210512%2F2%2F46759799.jpg&w=800&q=75" /></div>
+                <p class="list-comment3">애프터모멘트 박창선</p>
+                <p class="list-title">터지는 콘텐츠는 이렇게 만듭니다 Part 2: 독자의 마음 - 박창선</p>
+                <p class="list-comment">터지는 콘텐츠는 이렇게 만듭니다 : Wanted How To</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210512%2F2%2F46759799.jpg&w=800&q=75" /></div>
+                <p class="list-comment3">애프터모멘트 박창선</p>
+                <p class="list-title">터지는 콘텐츠는 이렇게 만듭니다 Part 2: 독자의 마음 - 박창선</p>
+                <p class="list-comment">터지는 콘텐츠는 이렇게 만듭니다 : Wanted How To</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210512%2F2%2F46759799.jpg&w=800&q=75" /></div>
+                <p class="list-comment3">애프터모멘트 박창선</p>
+                <p class="list-title">터지는 콘텐츠는 이렇게 만듭니다 Part 2: 독자의 마음 - 박창선</p>
+                <p class="list-comment">터지는 콘텐츠는 이렇게 만듭니다 : Wanted How To</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210512%2F2%2F46759799.jpg&w=800&q=75" /></div>
+                <p class="list-comment3">애프터모멘트 박창선</p>
+                <p class="list-title">터지는 콘텐츠는 이렇게 만듭니다 Part 2: 독자의 마음 - 박창선</p>
+                <p class="list-comment">터지는 콘텐츠는 이렇게 만듭니다 : Wanted How To</p>
+              </a>
+            </li>
             <li>
               <a href="#">
                 <div><img class="list-image" src="https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210512%2F2%2F46759799.jpg&w=800&q=75" /></div>
@@ -182,10 +256,10 @@
             </li>
           </ul>
         </div>
-        <div id="line-banner">직군/직무를 입력하면 관련 콘텐츠를 추천해 드려요. 👀 ></div>
+        <div id="line-banner">직군/직무를 입력하면 관련 콘텐츠를 추천해 드려요. 👀 <i class="fa-solid fa-angle-right"></i></div>
         <div class="section2">
           <h2>커리어 성장을 위한 맞춤 이벤트</h2>
-          <a href="#" class="example">이벤트 전체보기 ></a>
+          <a href="#" class="example">이벤트 전체보기 <i class="fa-solid fa-angle-right"></i></a>
           <ul class="career-list">
             <li class="event-list">
               <a href="#">
@@ -221,10 +295,10 @@
             </li>
           </ul>
         </div>
-        <div id="section3">
-          <div id="section3-grid1">
-            <div id="section3-grid2">
-              <div id="section3-grid3">
+        <div id="reason">
+          <div id="reason-grid1">
+            <div id="reason-grid2">
+              <div id="reason-grid3">
                 <svg id="logo-plus" viewBox="0 0 160 31">
                   <path
                     d="M0.140625 10.0156L6.11719 29H11.4258L15.5391 16.5547L19.6172 29H24.9609L30.9375 10.0156H25.6289L22.1133 21.8984L18.2461 10.0156H12.7969L8.92969 21.8984L5.41406 10.0156H0.140625ZM46.5469 29H51.6094V10.0156H46.5469V11.9844C45.1758 10.2441 43.1895 9.3125 40.6406 9.3125C35.2969 9.3125 31.4121 13.6016 31.4297 19.5078C31.4121 25.4141 35.2969 29.7031 40.6406 29.7031C43.1895 29.7031 45.1758 28.7891 46.5469 27.0664V29ZM36.4922 19.5078C36.4746 16.2559 38.6016 13.8828 41.5547 13.8828C44.543 13.8828 46.5117 16.0977 46.5469 19.5078C46.5117 22.918 44.543 25.1328 41.5547 25.1328C38.6016 25.1328 36.4746 22.7598 36.4922 19.5078ZM60.0469 29V17.75C60.082 15.7285 61.6289 14.0234 63.7383 14.0234C66.041 14.0234 67.2188 15.5527 67.2188 18.1719V29H72.2812V16.7656C72.2812 12.125 69.6445 9.3125 65.5312 9.3125C63.2285 9.3125 61.3125 10.4023 60.0469 12.1953V10.0156H54.9844V29H60.0469ZM86.6602 10.0156H82.8633V3.72266L77.8008 5.76172V10.0156H74.3906V14.5156H77.8008V22.7422C77.8008 28.1035 81.3867 30.2305 86.6602 29.1758V24.5352C83.7949 25.0801 82.8633 24.1836 82.8633 22.7422V14.5156H86.6602V10.0156ZM89.1211 19.5078C89.1211 25.4141 93.2871 29.7031 99 29.7031C103.078 29.7031 106.418 27.5762 108.035 23.832L103.148 22.6367C102.34 24.2012 100.881 25.1328 99 25.1328C96.4863 25.1328 94.7285 23.4805 94.2891 20.8438H108.809C108.844 20.4043 108.879 19.9648 108.879 19.5078C108.861 13.6016 104.713 9.3125 99 9.3125C93.2871 9.3125 89.1211 13.6016 89.1211 19.5078ZM94.5176 17.3281C94.834 15.377 96.4688 13.8828 99 13.8828C101.496 13.8828 103.113 15.377 103.465 17.3281H94.5176ZM130.746 29V0.804688L125.684 2.84375V11.9844C124.312 10.2441 122.326 9.3125 119.777 9.3125C114.434 9.3125 110.549 13.6016 110.566 19.5078C110.549 25.4141 114.434 29.7031 119.777 29.7031C122.326 29.7031 124.312 28.7891 125.684 27.0664V29H130.746ZM115.629 19.5078C115.611 16.2559 117.738 13.8828 120.691 13.8828C123.68 13.8828 125.648 16.0977 125.684 19.5078C125.648 22.918 123.68 25.1328 120.691 25.1328C117.738 25.1328 115.611 22.7598 115.629 19.5078ZM148.148 16.4141H141.363V20.3164H148.148V27.3828H152.191V20.3164H159.012V16.4141H152.191V9.41797H148.148V16.4141Z"
@@ -233,17 +307,10 @@
                 </svg>
                 <span id="subscribe-reason">구독해야 하는 이유</span>
               </div>
-              <p>구독자의 서류 합격률이 비구독자보다 1.5배 높아요!</p>
+              <p class="reason-grid2-comment">구독자의 서류 합격률이 비구독자보다 1.5배 높아요!</p>
               <a href="#" id="apply-subscribe">
-                <p>
-                  <svg class="check-icon" viewBox="0 0 15 15">
-                    <defs><path id="al3je9dvha" d="M576.95 196.13c-.217-.217-.57-.217-.787 0-.217.218-.217.57 0 .788l3.71 3.71c.217.217.57.217.787 0l6.677-6.678c.217-.217.217-.57 0-.787-.217-.217-.57-.217-.787 0l-6.284 6.284-3.316-3.316z"></path></defs>
-                    <g fill="currentColor" fill-rule="evenodd">
-                      <g transform="translate(-575 -192)"><use fill="#FFF" fill-rule="nonzero" stroke="#FFF" stroke-width=".3" xlink:href="#al3je9dvha"></use></g>
-                    </g>
-                  </svg>
-                </p>
-                <p>첫 구독 0원 신청하기</p>
+                <i class="fa-solid fa-check" style="color: white"></i>
+                <p class="apply-subscribe-comment">첫 구독 0원 신청하기</p>
               </a>
             </div>
             <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fimage.wanted.co.kr%2Fuserweb%2Fcareerhome%2Ffirst-wantedplus-subscribe.png&w=800&q=90" height="158px" />
@@ -253,39 +320,20 @@
           <h2>채용 정보를 찾고 계셨나요?</h2>
           <div class="jobs">
             <div class="jobs-menu">
-              <svg class="jobs-icon" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
-                <defs>
-                  <path id="qt2dnsql4a" d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z"></path>
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                  <use fill="#333" fill-rule="nonzero" stroke="#333" stroke-width=".3" xlink:href="#qt2dnsql4a"></use>
-                </g>
-              </svg>
-              <p class="jobs-expl">채용공고 ></p>
+              <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+              <p class="jobs-expl">채용공고 <i class="fa-solid fa-angle-right"></i></p>
             </div>
             <div class="jobs-menu">
-              <svg class="jobs-icon" viewBox="0 0 32 32">
-                <path
-                  d="M18.812 14.36c-.722.917-1.172 1.905-1.188 2.959-.023 1.658.907 2.901 2.613 3.605l.132.044c3.985 1.027 6.615 3.38 6.615 5.748L27 28.118c0 .03-.222.215-.4.215H5.33c-.157 0-.314-.14-.314-.203L5 26.705c0-2.283 2.384-4.493 6.185-5.564.349-.079.896-.273 1.458-.616.885-.54 1.504-1.297 1.654-2.301a1 1 0 1 0-1.978-.296c-.05.333-.293.63-.719.89-.345.21-.703.338-.909.385C6.075 20.503 3 23.353 3 26.716l.016 1.426c0 1.214 1.103 2.191 2.313 2.191h21.272c1.213-.002 2.399-.995 2.399-2.226l-.016-1.403c0-3.432-3.313-6.414-8.044-7.654-.944-.404-1.327-.932-1.316-1.702.008-.541.284-1.147.76-1.75.31-.394.622-.691.81-.84l.1-.092c1.409-1.474 2.319-3.428 2.319-5.333 0-4.169-3.488-7.666-7.648-7.666-4.158 0-7.647 3.498-7.647 7.666 0 1.795.506 3.33 1.55 4.628a1 1 0 1 0 1.558-1.255c-.748-.93-1.108-2.02-1.108-3.373 0-3.065 2.595-5.666 5.647-5.666 3.054 0 5.648 2.6 5.648 5.666 0 1.329-.67 2.786-1.722 3.906a7.46 7.46 0 0 0-1.079 1.122z"
-                ></path>
-              </svg>
-              <p class="jobs-expl">내 프로필 ></p>
+              <i class="fa fa-user-o fa-lg" aria-hidden="true"></i>
+              <p class="jobs-expl">내 프로필 <i class="fa-solid fa-angle-right"></i></p>
             </div>
             <div class="jobs-menu">
-              <svg class="jobs-icon" viewBox="0 0 32 32">
-                <path
-                  d="M11.667 28.667a1 1 0 0 1-1-1v-7h-2v7a1 1 0 0 1-1 1H2.333a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1H17a1 1 0 0 1 1 1v4.333h11a1 1 0 0 1 .993.884l.007.116v12a1 1 0 1 1-2 0v-11H18v15.334h11a1 1 0 1 1 0 2H11.667zM16 6H3.333v20.667h3.334v-7a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v7H16V6zm5 12.333c.736 0 1.333.597 1.333 1.334V21a1.333 1.333 0 1 1-2.666 0v-1.333c0-.737.597-1.334 1.333-1.334zM21 13c.736 0 1.333.597 1.333 1.333v1.334a1.333 1.333 0 1 1-2.666 0v-1.334c0-.736.597-1.333 1.333-1.333zM8 13a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-.667a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1H8zm0-5.333a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-.667a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1H8z"
-                ></path>
-              </svg>
-              <p class="jobs-expl">매치업 ></p>
+              <i class="fa fa-building-o fa-lg" aria-hidden="true"></i>
+              <p class="jobs-expl">매치업 <i class="fa-solid fa-angle-right"></i></p>
             </div>
             <div class="jobs-menu">
-              <svg class="jobs-icon" viewBox="0 0 32 32">
-                <path
-                  d="M10.667 21.667a3.67 3.67 0 0 1 3.528 2.666H28a1 1 0 0 1 0 2l-13.805.001a3.67 3.67 0 0 1-7.057 0H4a1 1 0 1 1 0-2h3.138a3.67 3.67 0 0 1 3.529-2.667zm0 2a1.668 1.668 0 0 0 0 3.333 1.668 1.668 0 0 0 0-3.333zm10.666-11.334A3.67 3.67 0 0 1 24.862 15H28a1 1 0 0 1 0 2h-3.138a3.67 3.67 0 0 1-7.057 0H4a1 1 0 0 1 0-2h13.805a3.67 3.67 0 0 1 3.528-2.667zm0 2a1.668 1.668 0 0 0 0 3.334 1.668 1.668 0 0 0 0-3.334zM10.667 3a3.67 3.67 0 0 1 3.528 2.666H28a1 1 0 0 1 0 2H14.195a3.67 3.67 0 0 1-7.057 0H4a1 1 0 1 1 0-2h3.138A3.67 3.67 0 0 1 10.667 3zm0 2a1.668 1.668 0 0 0 0 3.333 1.668 1.668 0 0 0 0-3.333z"
-                ></path>
-              </svg>
-              <p class="jobs-expl">직군별 연봉 ></p>
+              <i class="fa fa-sliders fa-lg" aria-hidden="true"></i>
+              <p class="jobs-expl">직군별 연봉 <i class="fa-solid fa-angle-right"></i></p>
             </div>
           </div>
         </div>
@@ -297,5 +345,6 @@
       </footer>
     </div>
     <script src="../js/slideShow.js"></script>
+    <script src="../js/scrollMenu.js"></script>
   </body>
 </html>
