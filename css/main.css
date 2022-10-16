@@ -65,6 +65,7 @@
   border: 1px solid #999;
   background-color: #fff;
   text-align: left;
+  z-index: 8;
 }
 
 #mini-popup-top {
@@ -111,10 +112,6 @@
   width: 63rem;
 }
 
-.scroll::-webkit-scrollbar{
-  display:none;
-}
-
 .scroll button {
   padding: 0.7rem 1.37rem;
   background-color: inherit;
@@ -130,7 +127,7 @@
   background-color: #e1e2e3;
 }
 
-.scroll-button-left, .scroll-button-right {
+.scroll-button-left {
   position: absolute;
   top: 0;
   width: 5rem;
@@ -139,6 +136,10 @@
 } 
 
 .scroll-button-right {
+  position: absolute;
+  top: 0;
+  width: 5rem;
+  height: 2.53rem;
   right: 0rem;
   background: linear-gradient(270deg,#fff 50%,hsla(0,0%,100%,0));
 }

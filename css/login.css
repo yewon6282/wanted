@@ -14,7 +14,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 25rem;
-  height: 42.5rem;
   text-align: center;
   background-color: #fff;
   border-radius: 0.3rem;
@@ -83,17 +82,28 @@
   border-radius: 0.3rem;
 }
 
+#emailCheck {
+  bottom: 0;
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+}
+
+input[type="submit"] {
+  font-family: FontAwesome;
+}
+
 .email-login-button {
-  width: inherit;
-  height: 54px;
+  width: 22.5rem;
+  height: 3.37rem;
   border: 0;
-  border-radius: 27px;
+  border-radius: 1.68rem;
   color: #fff;
   background-color: #3366FF;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .email-login-button span {
@@ -107,10 +117,8 @@
 
 .continue-next-account {
   color: #767676;
-  margin-bottom: 17px;
-  font-size: 14px;
-  display: flex;
-  flex-direction: row;
+  margin-bottom: 1.06rem;
+  font-size: 0.87rem;
 }
 
 .another-social-buttons {
@@ -154,15 +162,15 @@
 }
 
 .another-social-buttons p {
-  font-size: 13px;
+  font-size: 0.81rem;
   font-weight: 500;
   color: #666;
 }
 
 .popup-bottom-comment {
-  margin-top: 26px;
+  margin-top: 1.625rem;
   text-align: center;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   color: #999;
 }
