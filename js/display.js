@@ -21,11 +21,6 @@ function loginOffDisplay(idMyDiv) {
   emailCheck.innerHTML = "";
 }
 
-function gotosignup() {
-  document.getElementById("login-popup-background").style.display = "none";
-  document.getElementById("signup-popup-background").style.display = "block";
-}
-
 function signupOffDisplay(idMyDiv) {
   var signupObjDis = document.getElementById(idMyDiv);
   var nameValue = document.getElementById("name");
@@ -57,4 +52,20 @@ function signupOffDisplay(idMyDiv) {
   checkPasswordValue.value = "";
   checkPasswordValue.style.border = "1px solid #e1e2e3";
   passwordDoubleCheck.innerHTML = "";
+}
+
+function warningOn(idMyDiv) {
+  var objDis = document.getElementById(idMyDiv);
+
+  objDis.style.display = "block";
+  document.getElementById("angle-down-icon").style.display = "none";
+  document.getElementById("angle-up-icon").style.display = "block";
+}
+
+function warningOff(idMyDiv) {
+  var objDis = document.getElementById(idMyDiv);
+
+  objDis.style.display = "none";
+  document.getElementById("angle-down-icon").style.display = "block";
+  document.getElementById("angle-up-icon").style.display = "none";
 }

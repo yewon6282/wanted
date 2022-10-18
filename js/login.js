@@ -1,6 +1,4 @@
 function loginCheck() {
-  // event.defaultPrevented();
-
   var emailValue = document.getElementById("email");
   var emailCheck = document.getElementById("emailCheck");
   var email = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
@@ -11,9 +9,10 @@ function loginCheck() {
     emailCheck.style.color = "#fe415c";
     return false;
   } else {
+    emailValue.value = " "
     emailValue.style.border = "1px solid #e1e2e3";
     emailCheck.innerHTML = "";
+    document.getElementById("login-popup-background").style.display = "none";
+    document.getElementById("signup-popup-background").style.display = "block";
   }
-
-  emailValue.onsubmit;
 }
