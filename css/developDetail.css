@@ -1,23 +1,31 @@
 .develop-detail {
   width: 66.25rem;
   margin: 0 auto;
-  padding-top: 1.5rem;
 }
 
-.develop-detail-top {
-  width: inherit;
+.develop-detail-flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  margin: 1.5rem;
 }
 
-.develop-detail-top img {
+.develop-detail-image {
   width: 43.75rem;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+.develop-detail-image img {
+  width: inherit;
   height: 29rem;
   border-radius: 0.3rem;
 }
 
 .job-process-container {
+  position: sticky;
+  top: 4.6rem;
+  margin: 0 0 3.75rem 1rem;
   padding: 1.5rem 1.25rem;
   width: 18.625rem;
   height: 17.125rem;
@@ -198,7 +206,7 @@
 }
 
 .technology-stack-tool-type {
-  margin-top:  0.3125rem;
+  margin-top: 0.6rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -337,8 +345,6 @@
   line-height: 1.5;
   color: #666;
 }
-
-/*-----------------------------------*/
 
 .develop-detail-bottom {
   margin: 0 auto;
