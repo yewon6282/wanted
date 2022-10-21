@@ -69,5 +69,5 @@ function slideShow() {
   }
 
   currentIdx++;
-  setTimeout(slideShow, 5000);
+  setTimeout(slideShow, 3000);
 }
